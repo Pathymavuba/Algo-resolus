@@ -18,5 +18,10 @@ return num;
     }
     return nbr+1
 }
-
+function PalindromeTwo(str) { 
+    let value = false
+    str = str.replace(/\W/g, "").toUpperCase();
+    (str == str.split("").reverse().join(""))?value=true:value=false;
+     return value
+  }
 
