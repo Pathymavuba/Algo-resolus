@@ -24,4 +24,17 @@ function PalindromeTwo(str) {
     (str == str.split("").reverse().join(""))?value=true:value=false;
      return value
   }
+function valMinMax(array){
+        array.sort((a,b)=> a-b)
+         let sommin = 0;
+         let sommax = 0;
+         for(let i = 0 ; i<array.length-1;i++){
+            sommin += array[i] 
+         }
+         for(let i = 1 ; i<array.length;i++){
+            sommax += array[i] 
+         }
+         return(sommin + " " + sommax)
+    }
+ 
 
