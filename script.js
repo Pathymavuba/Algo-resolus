@@ -11,4 +11,13 @@ function FirstFactorial(num){
 (num < 2)? num = 1:num = num * FirstFactorial(num-1);
 return num;
 }
-  
+
+      function camelCase(str){
+    let nbr = 0
+    for(let i=0 ; i < str.length; i++){
+    (str == "")?nbr:((str.charAt(i)==str.charAt(i).toUpperCase())?nbr=nbr+1:nbr=nbr+0)
+    }
+    returnnbr+1
+}
+
+
