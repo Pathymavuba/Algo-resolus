@@ -36,5 +36,20 @@ function valMinMax(array){
          }
          return(sommin + " " + sommax)
     }
- 
+    function hasDuplicates(array) {
+      // vérifier si le tableau contien  des doublons
+     console.log((new Set(array)).size !== array.length);
+     // supprimer un doublon
+     console.log([...new Set(array)]) ;
+  }
+  function DoublonElement(array){
+     array.sort((a,b)=>a-b)
+     let verify = []
+     for(let i= 0;i<array.length-1;i++){
+       if (array[i + 1] == array[i]) {
+          verify.push(array[i])
+          }
+     }
+     return(verify);
+    }
 
