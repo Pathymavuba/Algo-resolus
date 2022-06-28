@@ -42,6 +42,7 @@ function valMinMax(array){
      // supprimer un doublon
      console.log([...new Set(array)]) ;
   }
+  hasDuplicates( [1,1,2])
   function DoublonElement(array){
      array.sort((a,b)=>a-b)
      let verify = []
@@ -53,3 +54,18 @@ function valMinMax(array){
      return(verify);
     }
 
+   //  retourner un tableau sans doublon , un array ordonné
+   function removeDuplicates (nums) {
+   
+      if (nums.length == 0) return 0;
+      let len = 1;
+       for(let i= 1; i <= nums.length-1;i++){
+         if (nums[i] !== nums[i-1]) {
+             nums[len] = nums[i]; 
+             len +=1;
+            }
+       }
+      
+      return len;
+      
+  };
